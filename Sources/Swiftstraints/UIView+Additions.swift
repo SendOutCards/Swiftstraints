@@ -6,6 +6,7 @@
 //  Copyright © 2015 Skyvive. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 extension UIView {
@@ -26,3 +27,4 @@ extension UIView {
     }
     
 }
+#endif

@@ -6,6 +6,9 @@
 //  Copyright © 2016 Skyvive. All rights reserved.
 //
 
+#if canImport(UIKit)
+import UIKit
+
 public enum LayoutPriority {
     
     case required
@@ -52,3 +55,4 @@ public struct PrioritizedConstant {
 public func |(constant: CGFloat, priority: LayoutPriority) -> PrioritizedConstant {
     return PrioritizedConstant(constant: constant, priority: priority)
 }
+#endif

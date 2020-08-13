@@ -6,6 +6,9 @@
 //  Copyright © 2016 Skyvive. All rights reserved.
 //
 
+#if canImport(UIKit)
+import UIKit
+
 extension NSLayoutConstraint {
     
     func priority(_ priority: LayoutPriority) -> Self {
@@ -14,3 +17,4 @@ extension NSLayoutConstraint {
     }
     
 }
+#endif

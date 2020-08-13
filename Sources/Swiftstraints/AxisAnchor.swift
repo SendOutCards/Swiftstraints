@@ -6,7 +6,8 @@
 //  Copyright © 2015 Skyvive. All rights reserved.
 //
 
-import Foundation
+#if canImport(UIKit)
+import UIKit
 
 @available(iOS 9.0, *)
 public protocol AxisAnchor {
@@ -81,3 +82,4 @@ public func +<T : AxisAnchor>(addend: CGFloat, axis: T) -> CompoundAxis<T.Anchor
 public func -<T : AxisAnchor>(axis: T, subtrahend: CGFloat) -> CompoundAxis<T.AnchorType> {
     return axis.add(-subtrahend)
 }
+#endif

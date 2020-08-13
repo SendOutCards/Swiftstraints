@@ -6,6 +6,7 @@
 //  Copyright © 2017 Skyvive. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 private func vflKey(_ object: AnyObject) -> String {
@@ -213,3 +214,4 @@ extension Array where Element == NSLayoutConstraint {
         self = V.constraints(axis: .vertical, options: options)
     }
 }
+#endif

@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Skyvive. All rights reserved.
 //
 
-import Foundation
+#if canImport(UIKit)
+import UIKit
 
 private func vflKey(_ object: AnyObject) -> String {
     return "A\(UInt(bitPattern: Unmanaged.passUnretained(object).toOpaque().hashValue))B"
@@ -133,3 +134,4 @@ extension Array where Element : NSLayoutConstraint {
     }
     
 }
+#endif

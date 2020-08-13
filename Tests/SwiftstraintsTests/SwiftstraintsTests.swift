@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Skyvive. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 import XCTest
 import Swiftstraints
@@ -139,3 +140,4 @@ class SwiftstraintsTests: XCTestCase {
     }
     
 }
+#endif

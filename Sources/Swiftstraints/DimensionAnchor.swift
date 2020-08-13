@@ -6,7 +6,8 @@
 //  Copyright © 2015 Skyvive. All rights reserved.
 //
 
-import Foundation
+#if canImport(UIKit)
+import UIKit
 
 @available(iOS 9.0, *)
 public protocol DimensionAnchor {
@@ -152,4 +153,4 @@ public func *(factor: CGFloat, dimension: DimensionAnchor) -> DimensionAnchor {
 public func /(dimension: DimensionAnchor, divisor: CGFloat) -> DimensionAnchor {
     return dimension.multiply(1/divisor)
 }
-
+#endif
